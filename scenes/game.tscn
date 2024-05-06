@@ -1,0 +1,137 @@
+[gd_scene load_steps=5 format=3 uid="uid://71sn272arlll"]
+
+[ext_resource type="StyleBox" uid="uid://8d5dxq7n201i" path="res://assets/theming/tile_16.tres" id="1_tfy8u"]
+[ext_resource type="StyleBox" uid="uid://dv4gptfnm4kk5" path="res://assets/theming/tile_8.tres" id="2_3pjio"]
+[ext_resource type="PackedScene" uid="uid://de8bgiywfm8bj" path="res://scenes/tile.tscn" id="3_wlr33"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nv8tg"]
+bg_color = Color(0.239216, 0.247059, 0.270588, 1)
+
+[node name="Game" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_nv8tg")
+
+[node name="Board" type="PanelContainer" parent="Background"]
+custom_minimum_size = Vector2(750, 750)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/panel = ExtResource("1_tfy8u")
+
+[node name="VericalGroup" type="VBoxContainer" parent="Background/Board"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 16
+
+[node name="Row" type="HBoxContainer" parent="Background/Board/VericalGroup"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Cell" type="PanelContainer" parent="Background/Board/VericalGroup/Row"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+theme_override_styles/panel = ExtResource("2_3pjio")
+
+[node name="Cell2" type="PanelContainer" parent="Background/Board/VericalGroup/Row"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+theme_override_styles/panel = ExtResource("2_3pjio")
+
+[node name="Cell3" type="PanelContainer" parent="Background/Board/VericalGroup/Row"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+theme_override_styles/panel = ExtResource("2_3pjio")
+
+[node name="Cell4" type="PanelContainer" parent="Background/Board/VericalGroup/Row"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+theme_override_styles/panel = ExtResource("2_3pjio")
+
+[node name="Row2" type="HBoxContainer" parent="Background/Board/VericalGroup"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Cell" type="PanelContainer" parent="Background/Board/VericalGroup/Row2"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+theme_override_styles/panel = ExtResource("2_3pjio")
+
+[node name="Cell2" type="PanelContainer" parent="Background/Board/VericalGroup/Row2"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+theme_override_styles/panel = ExtResource("2_3pjio")
+
+[node name="Tile" parent="Background/Board/VericalGroup/Row2/Cell2" instance=ExtResource("3_wlr33")]
+layout_mode = 2
+
+[node name="Cell3" type="PanelContainer" parent="Background/Board/VericalGroup/Row2"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+theme_override_styles/panel = ExtResource("2_3pjio")
+
+[node name="Cell4" type="PanelContainer" parent="Background/Board/VericalGroup/Row2"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+theme_override_styles/panel = ExtResource("2_3pjio")
+
+[node name="Row3" type="HBoxContainer" parent="Background/Board/VericalGroup"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Cell" type="PanelContainer" parent="Background/Board/VericalGroup/Row3"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+theme_override_styles/panel = ExtResource("2_3pjio")
+
+[node name="Cell2" type="PanelContainer" parent="Background/Board/VericalGroup/Row3"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+theme_override_styles/panel = ExtResource("2_3pjio")
+
+[node name="Cell3" type="PanelContainer" parent="Background/Board/VericalGroup/Row3"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+theme_override_styles/panel = ExtResource("2_3pjio")
+
+[node name="Cell4" type="PanelContainer" parent="Background/Board/VericalGroup/Row3"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+theme_override_styles/panel = ExtResource("2_3pjio")
+
+[node name="Row4" type="HBoxContainer" parent="Background/Board/VericalGroup"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Cell" type="PanelContainer" parent="Background/Board/VericalGroup/Row4"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+theme_override_styles/panel = ExtResource("2_3pjio")
+
+[node name="Cell2" type="PanelContainer" parent="Background/Board/VericalGroup/Row4"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+theme_override_styles/panel = ExtResource("2_3pjio")
+
+[node name="Cell3" type="PanelContainer" parent="Background/Board/VericalGroup/Row4"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+theme_override_styles/panel = ExtResource("2_3pjio")
+
+[node name="Cell4" type="PanelContainer" parent="Background/Board/VericalGroup/Row4"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+theme_override_styles/panel = ExtResource("2_3pjio")

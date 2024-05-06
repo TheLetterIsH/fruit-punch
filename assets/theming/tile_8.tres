@@ -1,0 +1,15 @@
+[gd_resource type="StyleBoxTexture" load_steps=2 format=3 uid="uid://dv4gptfnm4kk5"]
+
+[ext_resource type="Texture2D" uid="uid://dkb2vpyxc4vjs" path="res://assets/graphics/tiles/tile_8.png" id="1_l28eo"]
+
+[resource]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("1_l28eo")
+texture_margin_left = 8.0
+texture_margin_top = 8.0
+texture_margin_right = 8.0
+texture_margin_bottom = 8.0
+modulate_color = Color(0.215686, 0.227451, 0.254902, 1)

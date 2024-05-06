@@ -1,0 +1,7 @@
+MarginContainer
+TextureRect
+Label
+RichTextLabel
+PanelContainer
+HBoxContainer
+VBoxContainer

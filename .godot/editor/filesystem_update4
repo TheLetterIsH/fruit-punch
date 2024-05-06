@@ -1,0 +1,4 @@
+res://scenes/tile.tscn
+res://assets/theming/tile_16.tres
+res://assets/theming/tile_8.tres
+res://resources/shaders/outline.gdshader

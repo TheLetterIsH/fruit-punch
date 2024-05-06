@@ -1,0 +1,41 @@
+[gd_scene load_steps=4 format=3 uid="uid://de8bgiywfm8bj"]
+
+[ext_resource type="StyleBox" uid="uid://dv4gptfnm4kk5" path="res://assets/theming/tile_8.tres" id="1_tvhci"]
+[ext_resource type="Shader" path="res://resources/shaders/outline.gdshader" id="2_elvgc"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_yrfhl"]
+shader = ExtResource("2_elvgc")
+shader_parameter/color = Color(0, 0, 0, 1)
+shader_parameter/width = 30.0
+shader_parameter/pattern = 1
+shader_parameter/inside = false
+shader_parameter/add_margins = false
+
+[node name="Tile" type="PanelContainer"]
+custom_minimum_size = Vector2(150, 150)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -52.5
+offset_top = -52.5
+offset_right = 52.5
+offset_bottom = 52.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/panel = ExtResource("1_tvhci")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="Emoji" type="TextureRect" parent="MarginContainer"]
+material = SubResource("ShaderMaterial_yrfhl")
+layout_mode = 2
+expand_mode = 1
